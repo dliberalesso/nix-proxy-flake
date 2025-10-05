@@ -1,0 +1,21 @@
+# Editor configuration, see http://editorconfig.org
+root = true
+
+[*]
+end_of_line = lf
+trim_trailing_whitespace = true
+charset = utf-8
+indent_style = space
+indent_size = 2
+
+# Ignore diffs/patches
+[*.{diff,patch}]
+indent_size = unset
+
+[{.*,secrets}/**]
+charset = unset
+indent_style = unset
+indent_size = unset
+
+[*.md]
+max_line_length = 120
