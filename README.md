@@ -25,10 +25,24 @@ To use this flake, add it as an input to your flake.nix file:
 This flake provides the following inputs:
 
 - `nixpkgs`: The unstable branch of the NixOS/nixpkgs repository.
+- `nixpkgs-lib`: The `lib` directory from the unstable branch of the NixOS/nixpkgs repository.
+- `cachix`: A tool for caching Nix builds.
+- `devenv`: A tool for creating development environments.
+- `flake-compat`: A compatibility layer for flakes.
+- `flake-parts`: A library for composing flakes.
+- `flake-root`: A library for finding the root of a flake.
+- `git-hooks`: A tool for managing git hooks.
+- `gitignore`: A tool for managing `.gitignore` files.
+- `nix-src`: A library for building Nix from source.
+- `treefmt-nix`: A tool for formatting Nix code.
 
 ## Outputs
 
 This flake does not provide any outputs itself. It is intended to be used as a proxy for the inputs of other flakes.
+
+## Development Guidelines
+
+For information on build, lint, test, code style, naming conventions, and error handling, please see the [development guidelines](AGENTS.md).
 
 ## License
 
