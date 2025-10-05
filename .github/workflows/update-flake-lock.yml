@@ -1,0 +1,33 @@
+name: Update Flake Inputs
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 0 6 * * *
+
+permissions:
+  contents: write
+
+jobs:
+  update-flake-lock:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: DeterminateSystems/determinate-nix-action@v3
+        with:
+          extra-conf: |
+            commit-lockfile-summary = ⬆️ build: Update flake.lock
+
+      - name: Update flake.lock
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          nix flake update --commit-lock-file
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
