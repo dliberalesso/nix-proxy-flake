@@ -9,7 +9,7 @@ To use this flake, add it as an input to your flake.nix file:
 ```nix
 {
   inputs = {
-    nix-proxy-flake.url = "github:dli50/nix-proxy-flake";
+    nix-proxy-flake.url = "github:dliberalesso/nix-proxy-flake";
 
     nixpkgs.follows = "nix-proxy-flake/nixpkgs";
   };
@@ -31,7 +31,7 @@ This flake provides the following inputs:
 - `flake-root`: A library for finding the root of a flake.
 - `git-hooks`: A tool for managing git hooks.
 - `gitignore`: A tool for managing `.gitignore` files.
-- `nix-src`: A library for building Nix from source.
+- `nix-src`: Source for [Determinate Nix][det-nix].
 - `treefmt-nix`: A tool for formatting Nix code.
 
 ## Outputs
@@ -45,3 +45,5 @@ For information on build, lint, test, code style, naming conventions, and error 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+[det-nix]: https://docs.determinate.systems/determinate-nix
