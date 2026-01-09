@@ -35,7 +35,9 @@
     };
 
     nix-src = {
-      url = "github:DeterminateSystems/nix-src";
+      # Temporary fix
+      url = "github:dliberalesso/nix-src";
+      # url = "github:DeterminateSystems/nix-src";
       inputs = {
         nixpkgs.follows = "nixpkgs";
         flake-parts.follows = "flake-parts";
