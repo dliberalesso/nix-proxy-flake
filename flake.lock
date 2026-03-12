@@ -112,11 +112,11 @@
         "nixpkgs-regression": "nixpkgs-regression"
       },
       "locked": {
-        "lastModified": 1772869237,
-        "narHash": "sha256-fUXAZYvSYy3lR+EMAD7dnXx79FjHda6kdcsoZOZ/L0U=",
+        "lastModified": 1773245448,
+        "narHash": "sha256-fYJde22g4XM3YTTEbWxlCSSYU/MyQEzbHMVEEHV1czY=",
         "owner": "DeterminateSystems",
         "repo": "nix-src",
-        "rev": "6362dda007ed781f134cfcc706191b9e40b5eaf5",
+        "rev": "258113502b47ed1a87acb9fd854f626d37275d7a",
         "type": "github"
       },
       "original": {
@@ -211,11 +211,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1772660329,
-        "narHash": "sha256-IjU1FxYqm+VDe5qIOxoW+pISBlGvVApRjiw/Y/ttJzY=",
+        "lastModified": 1773297127,
+        "narHash": "sha256-6E/yhXP7Oy/NbXtf1ktzmU8SdVqJQ09HC/48ebEGBpk=",
         "owner": "numtide",
         "repo": "treefmt-nix",
-        "rev": "3710e0e1218041bbad640352a0440114b1e10428",
+        "rev": "71b125cd05fbfd78cab3e070b73544abe24c5016",
         "type": "github"
       },
       "original": {
