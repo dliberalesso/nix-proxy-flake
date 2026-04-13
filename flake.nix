@@ -34,15 +34,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nix-src = {
-      url = "github:dliberalesso/nix-src";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        flake-parts.follows = "flake-parts";
-        git-hooks-nix.follows = "git-hooks";
-      };
-    };
-
     treefmt-nix = {
       url = "github:numtide/treefmt-nix";
       inputs.nixpkgs.follows = "nixpkgs";
